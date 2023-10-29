@@ -37,12 +37,3 @@ stats_df_sig <- subset(stats_df,stats_df$padj <= 0.05)
 # when considering p-values versus when we consider p-adjusted values
 # use a cutoff of 0.05
 
-
-
-
-dat <- subset(data,data$clade_name == 'Roseburia_inulinivorans') 
-m1 <- wilcox.test(value ~ group, data=dat, na.rm=TRUE, paired=FALSE, exact=FALSE, conf.int=TRUE)
-m1$p.value
-
-dat <- subset(data,data$clade_name == "Massiliimalia_timonensis")
-dat
