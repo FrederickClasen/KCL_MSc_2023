@@ -3,13 +3,6 @@ library('reshape2')
 library('ggplot2')
 library('ggpubr')
 
-# read in metadata (do this once)
-meta <- read.csv('metadata_parsed.csv',row.names = 'Sample.ID')
-# create an additional column for a sample group
-meta$group <- substr(rownames(meta), 0, 1)
-# inspect this data to see the metadata available
-
-
 ## Let's start with phylum level data
 # read in phylum level data
 data <- read.csv('phylum_abd.csv')
