@@ -7,7 +7,7 @@
 # Example 1: a single taxonomic group
 
 # load the data again to be sure you are working with the correct dataframe
-data <- read.csv('phylum_abd.csv')
+data <- read.csv('data/phylum_abd.csv')
 data <- melt(data)                            
 data$group <- substr(data$variable, 0, 1)
 head(data) # always use head to see if the data you loaded is correct
@@ -21,12 +21,13 @@ g <- g + ggtitle('Firmicutes')
 g
 
 # Exercise: run the command below to get all the phyla and then run the above
-# code block to see which ones are significant
+# code block to see which ones are significant in the boxplot
 phyla = unique(data$clade_name)
 phyla
 
 # this is a rather inefficient way to do this. Do you think we can use any 
-# functions / functional programming to do this in high throughput?
+# functions / functional programming to do this in high throughput? 
+# answer : use a for-loop
 
 # Example 2: several groups together
 

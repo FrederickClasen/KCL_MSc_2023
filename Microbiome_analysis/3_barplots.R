@@ -5,7 +5,7 @@ library('ggpubr')
 
 ## Let's start with phylum level data
 # read in phylum level data
-data <- read.csv('phylum_abd.csv')
+data <- read.csv('data/phylum_abd.csv')
 data <- melt(data)                            # use the help function to understand what melt does
 data$group <- substr(data$variable, 0, 1)
 

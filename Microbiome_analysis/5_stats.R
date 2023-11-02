@@ -1,6 +1,6 @@
 # calculate statistics 
 
-data <- read.csv('species_abd.csv')
+data <- read.csv('data/species_abd.csv')
 data <- melt(data)                            
 data$group <- substr(data$variable, 0, 1)
 head(data)

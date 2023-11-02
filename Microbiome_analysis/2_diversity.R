@@ -8,7 +8,7 @@ meta <- read.csv('data/metadata_parsed.csv',row.names = 'Sample.ID')
 # create an additional column for a sample group
 meta$group <- substr(rownames(meta), 0, 1)
 # inspect this data to see the metadata available 
-head(data)
+head(meta)
 # also view this by clicking on meta in the global environment
 
 # import species abundance data and view data
