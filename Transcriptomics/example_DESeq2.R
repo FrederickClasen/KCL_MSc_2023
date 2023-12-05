@@ -78,5 +78,9 @@ EnhancedVolcano(toptable = resLFC,              # We use the shrunken log2 fold 
 )
 
 
+## you can continue the rest of the analysis here
+## https://scienceparkstudygroup.github.io/rna-seq-lesson/06-differential-analysis/index.html
+
+
 
 
